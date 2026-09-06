@@ -21,6 +21,7 @@ import UseReduce2 from './UseReduce2'
 import HookBtn from './HookBtn'
 import ShallowCopy from './ShallowCopy'
 import Closure from './Closure'
+import Pagination2 from './Pagination2'
 const Memo = lazy(() => import('./Memo'))
 
 
@@ -32,6 +33,7 @@ function App() {
   return (
     <>
       <User.Provider value={{ name, setName }}>
+        <Pagination2/>
         <Closure />
         <ShallowCopy />
         <HookBtn />
