@@ -19,6 +19,7 @@ import CheckBox from './CheckBox'
 import StopWatch from './StopWatch'
 import UseReduce2 from './UseReduce2'
 import HookBtn from './HookBtn'
+import ShallowCopy from './ShallowCopy'
 const Memo=lazy(()=>import('./Memo'))
 
 
@@ -30,7 +31,8 @@ function App() {
   return (
     <>
     <User.Provider value={{name,setName}}>
-      
+
+      <ShallowCopy/>
     <HookBtn/>
       <UseReduce2/>
       <StopWatch/>
