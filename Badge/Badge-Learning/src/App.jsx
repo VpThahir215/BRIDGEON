@@ -18,6 +18,7 @@ import SignUp from './SignUp'
 import CheckBox from './CheckBox'
 import StopWatch from './StopWatch'
 import UseReduce2 from './UseReduce2'
+import HookBtn from './HookBtn'
 const Memo=lazy(()=>import('./Memo'))
 
 
@@ -29,6 +30,8 @@ function App() {
   return (
     <>
     <User.Provider value={{name,setName}}>
+      
+    <HookBtn/>
       <UseReduce2/>
       <StopWatch/>
       <CheckBox/>
