@@ -24,6 +24,7 @@ import Closure from './Closure'
 import Pagination2 from './Pagination2'
 import ChatRoom from './ChatRoom'
 import CheckBox2 from './CheckBox2'
+import RevieTask from './RevieTask'
 const Memo = lazy(() => import('./Memo'))
 
 
@@ -39,6 +40,7 @@ function App() {
            <button onClick={() => setShowChat(!showChat)}>
                 Leave Chat
             </button>
+            <RevieTask/>
 <CheckBox2/>
             {showChat && <ChatRoom />}
         <Pagination2/>
