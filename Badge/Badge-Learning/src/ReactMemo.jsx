@@ -8,6 +8,7 @@ const ReactMemo =React.memo(({name}) => {
     <div>
         {/* <button onClick={setName("Ronaldo")}>Change name</button> */}
       <h1>React Memo  :{name}</h1>
+      
     </div>
   )
 })

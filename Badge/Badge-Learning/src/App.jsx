@@ -22,6 +22,8 @@ import HookBtn from './HookBtn'
 import ShallowCopy from './ShallowCopy'
 import Closure from './Closure'
 import Pagination2 from './Pagination2'
+import ChatRoom from './ChatRoom'
+import CheckBox2 from './CheckBox2'
 const Memo = lazy(() => import('./Memo'))
 
 
@@ -29,10 +31,16 @@ function App() {
   const [count, setCount] = useState(0)
   const navigate = useNavigate()
   const [name, setName] = useState("Thahir")
+   const [showChat, setShowChat] = useState(true);
 
   return (
     <>
       <User.Provider value={{ name, setName }}>
+           <button onClick={() => setShowChat(!showChat)}>
+                Leave Chat
+            </button>
+<CheckBox2/>
+            {showChat && <ChatRoom />}
         <Pagination2/>
         <Closure />
         <ShallowCopy />
